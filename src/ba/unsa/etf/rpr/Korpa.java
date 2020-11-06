@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Korpa {
     private ArrayList<Artikl> artikli = new ArrayList<Artikl>();
 
+    int getBrojArtikala() {
+        return artikli.size();
+    }
+
     public boolean dodajArtikl(Artikl artikl) {
         if (artikli.size() < 50) {
             artikli.add(artikl);
@@ -36,4 +40,6 @@ public class Korpa {
         }
         return suma;
     }
+
+
 }
